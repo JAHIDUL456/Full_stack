@@ -7,6 +7,8 @@ app.use(cors({
 }));
 
 app.use(express.json());
+
+//for the home page
 app.get('/',(req,res)=>{
     res.json({
         id:1,
@@ -16,5 +18,24 @@ app.get('/',(req,res)=>{
         country:"Bangladesh"
     })
 })
+
+
+//this route is for the profile page
+
+app.get('/profile',(req,res)=>{
+  res.send("this is profile page");
+})
+
+//dynamic routing 
+app.get('/profile/:username',(req,res,next)=>{
+  const {username}=req.params;
+  res.send(`this is profile page of ${username}`);
+  
+})
+
+
+
+
+
 
 app.listen(5000);
