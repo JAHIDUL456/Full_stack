@@ -12,7 +12,8 @@ app.get('/',(req,res)=>{
         id:1,
         name:"Islam",
         roll:50,
-        city:"Dhaka"
+        city:"Dhaka",
+        country:"Bangladesh"
     })
 })
 
