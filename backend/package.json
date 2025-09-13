@@ -1,2 +1,1 @@
-{"type": "module",
-    "scripts":{"start":"node script.js","dev":"nodemon script.js"},"dependencies":{"cors":"^2.8.5","express":"^5.1.0","nodemon":"^3.1.10"}}
+{"type":"module","scripts":{"start":"node script.js","dev":"nodemon script.js"},"dependencies":{"cors":"^2.8.5","ejs":"^3.1.10","express":"^5.1.0","nodemon":"^3.1.10"}}
